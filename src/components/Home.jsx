@@ -1,9 +1,6 @@
 import { Typography, Stack } from "@mui/material";
-import React from "react";
 import Cat from "../assets/Cat.png";
 import MyButton from "./common/MyButton";
-import MySecButton from "./common/MySecButton";
-import Tabe from "./common/Tabe";
 
 function Home() {
   return (
@@ -11,8 +8,7 @@ function Home() {
       sx={{
         width: "100%",
         height: "100vh",
-        minHeight: "500px",
-        position: "relative",
+        minHeight: "800px",
         flexDirection: { xs: "column", md: "row" },
       }}
       // direction={"row"}
@@ -63,7 +59,6 @@ function Home() {
       <Stack width={"100%"} alignItems={"center"}>
         <img src={Cat} className="cat-img" />
       </Stack>
-      <Tabe />
     </Stack>
   );
 }
