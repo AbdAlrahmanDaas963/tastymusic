@@ -1,0 +1,76 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  
+  /* text-align: center; */
+}
+
+
+.menu-item {
+  width: 200px;
+  perspective: 2000px;
+}
+
+.sub-menu {
+  position: absolute;
+  top: 30px;
+  padding: 15px;
+  background-color: #ccc;
+  border-radius: 6px;
+
+  transform-origin: 50% -30px;
+}
+
+.sub-menu-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin: 0 0;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.sub-menu-container {
+}
+
+.sub-menu-item {
+  margin-bottom: 5px;
+}
+
+.texture{
+  background-color: #2d1e6b;
+  background-image: url("https://www.transparenttextures.com/patterns/white-texture.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+/* home */
+.cat-img {
+  max-width: 600px; /* Maximum width on large screens */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 900px) {
+  .cat-img {
+
+    max-width: 500px; /* Adjust maximum width for medium screens */
+  }
+}
+
+/* Small screens (landscape phones, small tablets) */
+@media (max-width: 768px) {
+  .cat-img {
+
+    max-width: 400px; /* Adjust maximum width for small screens */
+  }
+}
+
+/* Extra small screens (portrait phones) */
+@media (max-width: 480px) {
+  .cat-img {
+
+    max-width: 300px; /* Adjust maximum width for extra small screens */
+  }
+}

@@ -1,0 +1,43 @@
+
+.carter-one-regular {
+  font-family: "Carter One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html{
+  font-family: "Carter One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  background-color: var(--primary-color);
+  overflow-x: hidden;
+
+}
+
+:root {
+  font-family: "Carter One", system-ui;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --primary-color: #2D1E6B;
+  --secondary-color: #e74c3c;
+  --font-size: 16px;
+}
+
+
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+
