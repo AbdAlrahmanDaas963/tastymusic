@@ -1,16 +1,30 @@
+/*  */
+/* ! */
+/* ? */
+/* TODO */
+/* // */
 
-.carter-one-regular {
-  font-family: "Carter One", system-ui;
-  font-weight: 400;
-  font-style: normal;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+#root {
+  margin: 0 auto;
+}
+
+a {
+  font-weight: 500;
+  color: inherit;
+  text-decoration: inherit;
+}
 html{
   font-family: "Carter One", system-ui;
   font-weight: 400;
   font-style: normal;
-  background-color: var(--primary-color);
   overflow-x: hidden;
+  
 
 }
 
@@ -26,21 +40,20 @@ html{
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  --primary-color: #2D1E6B;
-  --secondary-color: #e74c3c;
-  --font-size: 16px;
 }
-
-
 
 body {
   margin: 0;
   min-height: 100vh;
   overflow-x: hidden;
+  background-color: #2D1E6B !important; /* ! FIX THIS */
 }
 
-
+.carter-one-regular {
+  font-family: "Carter One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
 
 .progress {
   position: fixed;

@@ -1,38 +1,29 @@
 import { createTheme } from "@mui/material/styles";
 
-const themeOptions = {
+const theme = createTheme({
   palette: {
-    // Customize your palette here if needed
+    type: "light",
     primary: {
-      main: "#3f51b5",
+      main: "#2D1E6B",
     },
     secondary: {
-      main: "#f50057",
+      main: "#D9D9D9",
+    },
+    third: {
+      main: "#DD00B8",
+    },
+    fourth: {
+      main: "#0D0A0D",
     },
   },
   typography: {
-    fontFamily: '"Carter One", system-ui',
-    h1: {
+    carter: {
       fontFamily: '"Carter One", system-ui',
     },
-    h2: {
-      fontFamily: '"Carter One", system-ui',
-    },
-    h3: {
-      fontFamily: '"Carter One", system-ui',
-    },
-    h4: {
-      fontFamily: '"Carter One", system-ui',
-    },
-    h5: {
-      fontFamily: '"Carter One", system-ui',
-    },
-    h6: {
-      fontFamily: '"Carter One", system-ui',
+    lato: {
+      fontFamily: '"Lato", sans-serif',
     },
   },
-};
-
-const theme = createTheme(themeOptions);
+});
 
 export default theme;

@@ -4,18 +4,24 @@ import MyHeader from "./components/MyHeader";
 import Tabe from "./components/common/Tabe";
 import Signer from "./components/Signer";
 import Tabe2 from "./components/common/Tabe2";
+import WelcomeSection from "./pages/WelcomeSection";
+import { Box, Typography } from "@mui/material";
+import theme from "./theme";
 
 function App() {
   return (
-    <div>
+    <Box sx={{ backgroundColor: theme.palette.primary.main }}>
       <MyHeader />
-      <Home />
+      <WelcomeSection />
+
+      {/* <Tabe2 /> */}
+      {/* <Signer /> */}
+
+      {/* <Home /> */}
       {/* <Tabe /> */}
-      <Tabe2 />
-      <Signer />
       {/* <MyButton /> */}
       {/* <MySecButton /> */}
-    </div>
+    </Box>
   );
 }
 

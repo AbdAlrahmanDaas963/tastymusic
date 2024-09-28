@@ -11,6 +11,7 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import MusicNoteIcon from "@mui/icons-material/MusicNote";
 import { Stack } from "@mui/material";
+import theme from "../theme";
 
 const pages = ["Products", "Signers", "Genre", "Support", "About"];
 
@@ -126,7 +127,7 @@ function MyHeader() {
               textDecoration: "none",
             }}
           >
-            TastyMusic2
+            TastyMusic
           </Typography>
           <Box
             sx={{
@@ -141,7 +142,9 @@ function MyHeader() {
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: "white", display: "block" }}
               >
-                {page}
+                <Typography variant="lato" sx={{ fontWeight: "300" }}>
+                  {page}
+                </Typography>
               </Button>
             ))}
           </Box>
