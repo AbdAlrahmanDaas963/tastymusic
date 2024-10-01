@@ -2,6 +2,13 @@ import { Typography, Stack, Box, Button } from "@mui/material";
 import theme from "../theme";
 import PlaylistCard from "../components/common/PlaylistCard";
 
+import pic1 from "../assets/signers/arctic.jpg";
+import pic2 from "../assets/signers/eminem.jpg";
+import pic3 from "../assets/signers/indila.jpg";
+import pic4 from "../assets/signers/radiohead.jpg";
+import pic5 from "../assets/signers/thedisturbed.jpg";
+import pic6 from "../assets/signers/theweeknd2.jpg";
+
 function GenreSection() {
   const genre = [
     { title: "All", selected: true },
@@ -11,21 +18,21 @@ function GenreSection() {
     { title: "Jazz", selected: false },
   ];
   const playlists = [
-    { title: "POP", link: "", pic: "" },
-    { title: "Rock", link: "", pic: "" },
-    { title: "Metal", link: "", pic: "" },
-    { title: "Jazz", link: "", pic: "" },
-    { title: "R&B/Soul", link: "", pic: "" },
-    { title: "Indie/Alternative", link: "", pic: "" },
+    { title: "POP", link: "", pic: pic1 },
+    { title: "Rock", link: "", pic: pic2 },
+    { title: "Metal", link: "", pic: pic3 },
+    { title: "Jazz", link: "", pic: pic4 },
+    { title: "R&B/Soul", link: "", pic: pic5 },
+    { title: "Indie/Alternative", link: "", pic: pic6 },
   ];
   const playlistsTorender = [];
   return (
     <Stack
       sx={{
         width: "100%",
-        height: "100vh",
+        height: "fit-content",
         minHeight: "500px",
-        border: "0px dotted red",
+        border: "1px dotted red",
       }}
       alignItems={"center"}
       justifyContent={"space-evenly"}
@@ -63,7 +70,7 @@ function GenreSection() {
       <Stack
         direction={"row"}
         flexWrap={"wrap"}
-        sx={{ maxWidth: "950px", border: "2px dotted green" }}
+        sx={{ maxWidth: "950px", border: "0px dotted green" }}
         gap={"20px"}
         alignItems={"center"}
         justifyContent={"center"}

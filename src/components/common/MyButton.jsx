@@ -1,24 +1,27 @@
 import { Button } from "@mui/material";
+import theme from "../../theme";
 
-function MyButton() {
+function MyButton({ selected, title, link, fullWidth }) {
   return (
     <Button
+      variant={selected ? "contained" : "outlined"}
+      size="large"
       sx={{
-        width: "200px",
-        height: "70px",
+        width: fullWidth ? "100%" : "160px",
+        borderColor: selected
+          ? theme.palette.third.main
+          : theme.palette.third.main,
+        color: theme.palette.secondary.main,
         transform: "skew(-20deg)",
-        backgroundColor: "white",
-        // background: "rgb(97,67,243)",
-        background:
-          "linear-gradient(39deg, rgba(97,67,243,1) 29%, rgba(241,125,255,1) 69%, rgba(165,0,138,1) 100%)",
         borderRadius: "0",
-        color: "white",
-        fontFamily: "Carter One, system-ui",
-        fontSize: "20px",
-        padding: "12px 40px",
+        backgroundColor: selected
+          ? theme.palette.third.main
+          : theme.palette.primary.main,
+        ...theme.typography.lato,
+        fontWeight: "800",
       }}
     >
-      Subscribe
+      {title}
     </Button>
   );
 }

@@ -10,6 +10,8 @@ import theme from "./theme";
 import DevDimensions from "./development/DevDimensions ";
 import SignerSection from "./pages/SignerSection";
 import GenreSection from "./pages/GenreSection";
+import FeedbackSection from "./pages/FeedbackSection";
+import Footer from "./pages/Footer";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
       <WelcomeSection />
       <SignerSection />
       <GenreSection />
+      <FeedbackSection />
+      <Footer />
       {/* <Tabe2 /> */}
       {/* <Signer /> */}
       {/* <Home /> */}
