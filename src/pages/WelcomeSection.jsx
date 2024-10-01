@@ -27,10 +27,12 @@ function WelcomeSection() {
         minHeight: "500px",
         maxWidth: "1500px",
         margin: "auto",
+        position: "relative",
       }}
     >
+      <div className="blurred-circle"></div>
       <Stack
-        sx={{ border: "0px dotted red" }}
+        sx={{ border: "0px dotted red", zIndex: "1" }}
         gap={"25px"}
         alignItems={{
           lg: "flex-start",

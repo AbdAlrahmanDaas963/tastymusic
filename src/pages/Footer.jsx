@@ -1,12 +1,4 @@
-import {
-  List,
-  ListItem,
-  ListItemText,
-  Link,
-  Typography,
-  Stack,
-  Box,
-} from "@mui/material";
+import { Typography, Stack } from "@mui/material";
 
 import theme from "../theme";
 
@@ -14,6 +6,21 @@ import MusicNoteIcon from "@mui/icons-material/MusicNote";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+
+const MyItem = ({ index, title }) => {
+  return (
+    <Typography
+      sx={{
+        ...theme.typography.lato,
+        fontWeight: index == 0 ? "800" : "",
+        fontSize: index == 0 ? "20px" : "16px",
+        textTransform: "capitalize",
+      }}
+    >
+      {title}
+    </Typography>
+  );
+};
 
 function Footer() {
   const company = [
@@ -69,17 +76,7 @@ function Footer() {
             gap={"10px"}
           >
             {company.map((item, index) => (
-              <Typography
-                sx={{
-                  ...theme.typography.lato,
-                  fontWeight: index == 0 ? "800" : "",
-                  fontSize: index == 0 ? "20px" : "16px",
-                  textTransform: "capitalize",
-                }}
-                key={index}
-              >
-                {item.title}
-              </Typography>
+              <MyItem key={index} index={index} title={item.title} />
             ))}
           </Stack>
           <Stack
@@ -87,17 +84,7 @@ function Footer() {
             gap={"10px"}
           >
             {help.map((item, index) => (
-              <Typography
-                sx={{
-                  ...theme.typography.lato,
-                  fontWeight: index == 0 ? "800" : "",
-                  fontSize: index == 0 ? "20px" : "16px",
-                  textTransform: "capitalize",
-                }}
-                key={index}
-              >
-                {item.title}
-              </Typography>
+              <MyItem key={index} index={index} title={item.title} />
             ))}
           </Stack>
           <Stack
@@ -105,17 +92,7 @@ function Footer() {
             gap={"10px"}
           >
             {resources.map((item, index) => (
-              <Typography
-                sx={{
-                  ...theme.typography.lato,
-                  fontWeight: index == 0 ? "800" : "",
-                  fontSize: index == 0 ? "20px" : "16px",
-                  textTransform: "capitalize",
-                }}
-                key={index}
-              >
-                {item.title}
-              </Typography>
+              <MyItem key={index} index={index} title={item.title} />
             ))}
           </Stack>
         </Stack>
