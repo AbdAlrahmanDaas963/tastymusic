@@ -1,7 +1,7 @@
 import { Typography, Stack, Box, Button } from "@mui/material";
 import theme from "../theme";
 
-import cat from "../assets/cat.png";
+import cat from "../assets/Cat.png";
 import MyTabe from "../components/common/MyTabe";
 
 function WelcomeSection() {
