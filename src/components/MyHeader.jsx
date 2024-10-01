@@ -28,11 +28,14 @@ function MyHeader() {
 
   return (
     <AppBar
-      position="static"
+      // position={{ lg: "static", md: "static", sm: "fixed", xs: "fixed" }}
+      // position="fixed"
       sx={{
         backgroundColor: "var(--primary-color)",
         fontFamily: "Carter One",
         boxShadow: "0",
+        zIndex: "2",
+        position: { lg: "static", md: "static", sm: "fixed", xs: "fixed" },
       }}
     >
       <Container maxWidth="xl">
