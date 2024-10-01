@@ -17,6 +17,10 @@ const theme = createTheme({
     },
   },
   typography: {
+    fontFamily: '"Carter One", sans-serif',
+    allVariants: {
+      color: "#D9D9D9",
+    },
     carter: {
       fontFamily: '"Carter One", system-ui',
     },

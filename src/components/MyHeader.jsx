@@ -13,7 +13,7 @@ import MusicNoteIcon from "@mui/icons-material/MusicNote";
 import { Stack } from "@mui/material";
 import theme from "../theme";
 
-const pages = ["Products", "Signers", "Genre", "Support", "About"];
+const pages = ["signers", "genre", "Support", "about"];
 
 function MyHeader() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -49,16 +49,15 @@ function MyHeader() {
               sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}
             />
             <Typography
-              variant="h6"
               noWrap
               component="a"
               sx={{
                 mr: 2,
                 display: { xs: "none", md: "flex" },
-                fontWeight: 700,
-                letterSpacing: ".3rem",
                 color: "inherit",
                 textDecoration: "none",
+                ...theme.typography.carter,
+                fontSize: "20px",
               }}
             >
               TastyMusic
@@ -101,7 +100,15 @@ function MyHeader() {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                  <Typography
+                    textAlign="center"
+                    sx={{
+                      textTransform: "uppercase",
+                      color: theme.palette.fourth.main,
+                    }}
+                  >
+                    {page}
+                  </Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -140,9 +147,17 @@ function MyHeader() {
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
+                sx={{
+                  my: 2,
+                  color: "white",
+                  display: "block",
+                  textTransform: "uppercase",
+                }}
               >
-                <Typography variant="lato" sx={{ fontWeight: "300" }}>
+                <Typography
+                  variant="lato"
+                  sx={{ fontWeight: "300", fontSize: "13px" }}
+                >
                   {page}
                 </Typography>
               </Button>

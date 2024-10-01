@@ -1,36 +1,118 @@
-import React from "react";
-
 import { Typography, Stack, Box, Button } from "@mui/material";
+import theme from "../theme";
+
+import cat from "../assets/cat.png";
+import MyTabe from "../components/common/MyTabe";
 
 function WelcomeSection() {
   return (
-    <Stack direction={{ lg: "row", md: "row", sm: "column", xs: "column" }}>
-      <Stack>
-        <Typography>Your Favorite Lyrical Channel</Typography>
-        <Typography>
-          Lyrical music videos with translations to Arabic
+    <Stack
+      direction={{ lg: "row", md: "row", sm: "column", xs: "column" }}
+      sx={{
+        padding: {
+          lg: "0 100px",
+          md: "0 50px",
+          sm: "50px 0 0 0",
+          xs: "80px 0 0 0",
+        },
+        justifyContent: {
+          lg: "space-between",
+          md: "space-between",
+          sm: "center",
+          xs: "center",
+        },
+        alignItems: "center",
+        border: "0px solid white",
+        height: "fit-content",
+        minHeight: "500px",
+        maxWidth: "1500px",
+        margin: "auto",
+      }}
+    >
+      <Stack
+        sx={{ border: "0px dotted red" }}
+        gap={"25px"}
+        alignItems={{
+          lg: "flex-start",
+          md: "flex-start",
+          sm: "center",
+          xs: "center",
+        }}
+      >
+        <Typography
+          sx={{ fontSize: { lg: "70px", md: "40px", sm: "40px", xs: "40px" } }}
+        >
+          Your Favorite
+          <br /> Lyrical Channel
         </Typography>
-        <Button>Subscribe</Button>
-        <Stack>
-          <Stack>
-            <Typography>3k+</Typography>
-            <Typography>Subscriber</Typography>
+        <Stack direction={"row"} gap={"3px"} alignItems={"center"}>
+          <Typography
+            sx={{
+              ...theme.typography.lato,
+              fontSize: { lg: "20px", md: "20px", sm: "16px", xs: "16px" },
+            }}
+          >
+            Lyrical music videos with translations to
+          </Typography>
+          <Typography
+            style={{
+              ...theme.typography.lato,
+              fontSize: { lg: "20px", md: "20px", sm: "16px", xs: "16px" },
+              fontWeight: "bold",
+            }}
+          >
+            Arabic
+          </Typography>
+        </Stack>
+        <Button
+          variant="contained"
+          size="large"
+          sx={{
+            backgroundColor: theme.palette.third.main,
+            transform: "skew(-20deg)",
+            borderRadius: "0",
+          }}
+        >
+          Subscribe
+        </Button>
+        <Stack
+          direction={"row"}
+          alignItems={"center"}
+          justifyContent={"space-between"}
+          sx={{ border: "0px solid green", width: "300px" }}
+        >
+          <Stack alignItems={"center"}>
+            <Typography sx={{ fontSize: "25px" }}>3k+</Typography>
+            <Typography sx={{ ...theme.typography.lato }}>
+              Subscriber
+            </Typography>
           </Stack>
-          <Stack>
-            <Typography>2M+</Typography>
-            <Typography>views</Typography>
+          <Stack alignItems={"center"}>
+            <Typography
+              sx={{ fontSize: "25px", color: theme.palette.third.main }}
+            >
+              2M+
+            </Typography>
+            <Typography sx={{ ...theme.typography.lato }}>views</Typography>
           </Stack>
-          <Stack>
-            <Typography>250+</Typography>
-            <Typography>videos</Typography>
+          <Stack alignItems={"center"}>
+            <Typography sx={{ fontSize: "25px" }}>250+</Typography>
+            <Typography sx={{ ...theme.typography.lato }}>videos</Typography>
           </Stack>
         </Stack>
       </Stack>
       <Stack>
-        <Box
-          sx={{ width: "300px", height: "300px", border: "2px dotted blue" }}
-        >
-          Cat and tabs
+        <Box sx={{ border: "0px dotted blue", position: "relative" }}>
+          <Box
+            sx={{
+              width: { lg: "500px", md: "450px", sm: "300px", xs: "300px" },
+            }}
+          >
+            <img src={cat} width={"100%"} />
+          </Box>
+          <Box sx={{ position: "absolute", right: "-100px" }}>
+            <MyTabe />
+          </Box>
         </Box>
       </Stack>
     </Stack>
