@@ -14,6 +14,7 @@ function SignerSection() {
         height: "100vh",
         minHeight: "500px",
         border: "0px dotted red",
+        zIndex: "1",
       }}
       alignItems={"center"}
       justifyContent={"space-evenly"}
@@ -23,6 +24,7 @@ function SignerSection() {
         direction={"row"}
         gap={{ lg: "50px", md: "40px", sm: "30px", xs: "20px" }}
         alignItems={"center"}
+        sx={{ zIndex: "1" }}
       >
         {signers.map((signer, index) => (
           <Box

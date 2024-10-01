@@ -33,10 +33,12 @@ function GenreSection() {
         height: "fit-content",
         minHeight: "500px",
         border: "1px dotted red",
+        position: "relative",
       }}
       alignItems={"center"}
       justifyContent={"space-evenly"}
     >
+      <div className="blurred-circle2"></div>
       <Typography fontSize={"50px"}>Top Genre</Typography>
       {/* <Stack
         direction={"row"}
