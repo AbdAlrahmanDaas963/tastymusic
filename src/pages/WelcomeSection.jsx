@@ -42,10 +42,10 @@ function WelcomeSection() {
         }}
       >
         <Typography
-          sx={{ fontSize: { lg: "70px", md: "40px", sm: "40px", xs: "40px" } }}
+          sx={{ fontSize: { lg: "70px", md: "40px", sm: "40px", xs: "35px" } }}
         >
-          Your Favorite
-          <br /> Lyrical Channel
+          Your <span style={{ color: theme.palette.third.main }}>Favorite</span>
+          <br /> Channel for Lyrics
         </Typography>
         <Stack direction={"row"} gap={"3px"} alignItems={"center"}>
           <Typography
