@@ -4,6 +4,7 @@ import theme from "../theme";
 import signer1 from "../assets/signers/arctic.jpg";
 import signer2 from "../assets/signers/indila.jpg";
 import signer3 from "../assets/signers/theweeknd.webp";
+import SignerCard from "../components/common/SignerCard";
 
 function SignerSection() {
   const signers = [signer1, signer2, signer3];
@@ -34,6 +35,9 @@ function SignerSection() {
         sx={{ zIndex: "1" }}
       >
         {signers.map((signer, index) => (
+          <SignerCard key={index} index={index} signer={signer} />
+        ))}
+        {/* {signers.map((signer, index) => (
           <Box
             key={index}
             sx={{
@@ -54,7 +58,7 @@ function SignerSection() {
           >
             <img src={signer} width={"100%"} />
           </Box>
-        ))}
+        ))} */}
       </Stack>
     </Stack>
   );

@@ -12,7 +12,7 @@ function FeedbackSection() {
         width: "100%",
         height: "fit-content",
         minHeight: "500px",
-        border: "1px dotted green",
+        border: "0px dotted green",
         padding: { lg: "", md: "", sm: "", xs: "100px 0" },
       }}
       direction={"row"}

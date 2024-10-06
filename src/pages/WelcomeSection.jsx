@@ -112,7 +112,15 @@ function WelcomeSection() {
           >
             <img src={cat} width={"100%"} />
           </Box>
-          <Box sx={{ position: "absolute", right: "-100px" }}>
+          <Box
+            sx={{
+              width: "100%",
+              position: "absolute",
+              bottom: "-50px",
+              // left: "50%",
+              // translateX: "(-50%)",
+            }}
+          >
             <MyTabe />
           </Box>
         </Box>

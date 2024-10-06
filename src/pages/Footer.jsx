@@ -47,7 +47,7 @@ function Footer() {
         width: "100%",
         height: "fit-content",
         minHeight: "500px",
-        border: "1px dotted green",
+        border: "0px dotted green",
         padding: "50px 0",
       }}
       alignItems={"center"}
