@@ -11,7 +11,7 @@ function FeedbackCard({ comment, person, name, city }) {
         height: "250px",
         boxShadow: `0 0 2px ${theme.palette.secondary.main}`,
         borderRadius: "10px",
-        backdropFilter: "blur(5px)",
+        // backdropFilter: "blur(5px)",
         backgroundColor: "rgba(255, 255, 255, 0.1)",
         padding: "35px",
         position: "relative",

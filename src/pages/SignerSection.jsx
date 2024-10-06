@@ -19,7 +19,14 @@ function SignerSection() {
       alignItems={"center"}
       justifyContent={"space-evenly"}
     >
-      <Typography fontSize={"50px"}>search for your favorite signer</Typography>
+      <Typography
+        fontSize={{ lg: "50px", md: "50px", sm: "40px", xs: "40px" }}
+        sx={{
+          padding: { lg: "", md: "", sm: "", xs: "0 30px" },
+        }}
+      >
+        search for your favorite signer
+      </Typography>
       <Stack
         direction={"row"}
         gap={{ lg: "50px", md: "40px", sm: "30px", xs: "20px" }}

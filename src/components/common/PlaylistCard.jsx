@@ -11,9 +11,10 @@ function PlaylistCard({ title, link, pic }) {
         padding: "20px",
         // border: `1px solid ${theme.palette.secondary.main}`,
         boxShadow: `0 0 2px ${theme.palette.secondary.main}`,
-        backdropFilter: "blur(5px)",
-        backgroundColor: "rgba(255, 255, 255, 0.1)",
+        // backdropFilter: "blur(5px)",
+        backgroundColor: "rgba(45, 30, 107, 0.5)",
         borderRadius: "10px",
+        zIndex: 1,
       }}
       alignItems={"center"}
       justifyContent={"space-between"}

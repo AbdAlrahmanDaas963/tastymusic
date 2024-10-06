@@ -10,14 +10,15 @@ function FeedbackSection() {
     <Stack
       sx={{
         width: "100%",
-        height: "100vh",
+        height: "fit-content",
         minHeight: "500px",
         border: "1px dotted green",
+        padding: { lg: "", md: "", sm: "", xs: "100px 0" },
       }}
       direction={"row"}
       alignItems={"center"}
       justifyContent={"center"}
-      gap={"20px"}
+      gap={{ lg: "20px", md: "70px", sm: "70px", xs: "70px" }}
       flexWrap={"wrap"}
     >
       <FeedbackCard

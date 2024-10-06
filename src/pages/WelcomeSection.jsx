@@ -10,9 +10,9 @@ function WelcomeSection() {
       direction={{ lg: "row", md: "row", sm: "column", xs: "column" }}
       sx={{
         padding: {
-          lg: "0 100px",
-          md: "0 50px",
-          sm: "50px 0 0 0",
+          lg: "50px 100px",
+          md: "50px 50px",
+          sm: "100px 0 0 0",
           xs: "80px 0 0 0",
         },
         justifyContent: {

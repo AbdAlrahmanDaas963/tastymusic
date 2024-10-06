@@ -7,7 +7,7 @@ import Tabe2 from "./components/common/Tabe2";
 import WelcomeSection from "./pages/WelcomeSection";
 import { Box, Typography } from "@mui/material";
 import theme from "./theme";
-import DevDimensions from "./development/DevDimensions ";
+import DevDimensions from "./development/DevDimensions";
 import SignerSection from "./pages/SignerSection";
 import GenreSection from "./pages/GenreSection";
 import FeedbackSection from "./pages/FeedbackSection";
