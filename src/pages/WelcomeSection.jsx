@@ -67,6 +67,7 @@ function WelcomeSection() {
           </Typography>
         </Stack>
         <Button
+          href="https://youtube.com/@tastymusic-david?si=7YlPlebmVntgZ4mT"
           variant="contained"
           size="large"
           sx={{

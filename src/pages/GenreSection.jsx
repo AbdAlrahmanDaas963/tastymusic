@@ -1,33 +1,25 @@
-import { Typography, Stack, Box, Button } from "@mui/material";
-import theme from "../theme";
+import { Typography, Stack } from "@mui/material";
 import PlaylistCard from "../components/common/PlaylistCard";
 
-import pic1 from "../assets/signers/arctic.jpg";
-import pic2 from "../assets/signers/eminem.jpg";
-import pic3 from "../assets/signers/indila.jpg";
-import pic4 from "../assets/signers/radiohead.jpg";
-import pic5 from "../assets/signers/thedisturbed.jpg";
-import pic6 from "../assets/signers/theweeknd2.jpg";
+import rock_pic from "../assets/genre/Rock.jpeg";
+import country_pic from "../assets/genre/Country.jpg";
+import pop_pic from "../assets/genre/Pop.jpg";
+import Electronic_pic from "../assets/genre/Electronic_Dance.png";
+import HipHop_pic from "../assets/genre/Hip-Hop_Rap.png";
+import Soul_pic from "../assets/genre/R&B_Soul.png";
 
 function GenreSection() {
-  const genre = [
-    { title: "All", selected: true },
-    { title: "POP", selected: false },
-    { title: "Rock", selected: false },
-    { title: "Metal", selected: false },
-    { title: "Jazz", selected: false },
-  ];
   const playlists = [
-    { title: "POP", link: "", pic: pic1 },
-    { title: "Rock", link: "", pic: pic2 },
-    { title: "Metal", link: "", pic: pic3 },
-    { title: "Jazz", link: "", pic: pic4 },
-    { title: "R&B/Soul", link: "", pic: pic5 },
-    { title: "Indie/Alternative", link: "", pic: pic6 },
+    { title: "Pop", link: "", pic: pop_pic },
+    { title: "Rock", link: "", pic: rock_pic },
+    { title: "Hip-Hop/Rap", link: "", pic: HipHop_pic },
+    { title: "Electronic/Dance", link: "", pic: Electronic_pic },
+    { title: "R&B/Soul", link: "", pic: Soul_pic },
+    { title: "Country", link: "", pic: country_pic },
   ];
-  const playlistsTorender = [];
   return (
     <Stack
+      id={"genre"}
       sx={{
         width: "100%",
         height: "fit-content",
@@ -41,35 +33,6 @@ function GenreSection() {
     >
       <div className="blurred-circle2"></div>
       <Typography fontSize={"50px"}>Top Genre</Typography>
-      {/* <Stack
-        direction={"row"}
-        alignItems={"center"}
-        justifyContent={"center"}
-        gap={"10px"}
-        sx={{ width: "100%", height: "60px", border: "1px dotted yellow" }}
-      >
-        {genre.map((genre, index) => (
-          <Button
-            key={index}
-            variant={genre.selected ? "contained" : "outlined"}
-            size="large"
-            sx={{
-              width: "150px",
-              borderColor: genre.selected
-                ? theme.palette.third.main
-                : theme.palette.third.main,
-              color: theme.palette.secondary.main,
-              transform: "skew(-20deg)",
-              borderRadius: "0",
-              backgroundColor: genre.selected
-                ? theme.palette.third.main
-                : theme.palette.primary.main,
-            }}
-          >
-            {genre.title}
-          </Button>
-        ))}
-      </Stack> */}
       <Stack
         direction={"row"}
         flexWrap={"wrap"}

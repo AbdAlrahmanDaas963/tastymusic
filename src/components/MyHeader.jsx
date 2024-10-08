@@ -21,6 +21,12 @@ const pages = ["signers", "genre", "Support", "about"];
 
 function MyHeader() {
   const controls = useAnimation();
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
@@ -137,7 +143,13 @@ function MyHeader() {
                 }}
               >
                 {pages.map((page) => (
-                  <MenuItem key={page} onClick={handleCloseNavMenu}>
+                  <MenuItem
+                    key={page}
+                    onClick={() => {
+                      handleCloseNavMenu();
+                      scrollToSection(page);
+                    }}
+                  >
                     <Typography
                       textAlign="center"
                       sx={{
@@ -182,13 +194,17 @@ function MyHeader() {
               {pages.map((page) => (
                 <Button
                   key={page}
-                  onClick={handleCloseNavMenu}
+                  onClick={() => {
+                    handleCloseNavMenu();
+                    scrollToSection(page);
+                  }}
                   sx={{
                     my: 2,
                     color: "white",
                     display: "block",
                     textTransform: "uppercase",
                   }}
+                  href={`#${page}`}
                 >
                   <Typography sx={{ fontWeight: "300", fontSize: "13px" }}>
                     {page}

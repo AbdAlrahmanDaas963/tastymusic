@@ -24,7 +24,7 @@ html{
   font-weight: 400;
   font-style: normal;
   overflow-x: hidden;
-  
+  scroll-behavior: smooth;
 
 }
 
@@ -87,4 +87,28 @@ body {
 .parallax span {
   display: block;
   margin-right: 30px;
+}
+
+
+/* Hide the scrollbar track */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+  background: transparent; /* Makes the track invisible */
+}
+
+/* Style the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background: #DD00B8; /* Set thumb color */
+  border-radius: 10px; /* Optional: rounded corners */
+}
+
+/* Optional: Add hover effect on the scrollbar thumb */
+::-webkit-scrollbar-thumb:hover {
+  background: #d50082; /* Darker shade on hover (optional) */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin; /* Makes the scrollbar thin */
+  scrollbar-color: #DD00B8 transparent; /* thumb color and track color */
 }

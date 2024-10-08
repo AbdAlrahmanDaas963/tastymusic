@@ -43,6 +43,7 @@ function Footer() {
   ];
   return (
     <Stack
+      id={"about"}
       sx={{
         width: "100%",
         height: "fit-content",

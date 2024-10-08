@@ -8,6 +8,7 @@ import FeedbackCard from "../components/common/FeedbackCard";
 function FeedbackSection() {
   return (
     <Stack
+      id={"Support"}
       sx={{
         width: "100%",
         height: "fit-content",
